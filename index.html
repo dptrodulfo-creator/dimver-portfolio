@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dimver Paul T. Rodulfo — Frontend Developer &amp; UI/UX Designer</title>
+  <meta name="description" content="Portfolio of Dimver Paul T. Rodulfo, a BS Computer Science student at Catanduanes State University building clean, user-friendly web experiences.">
+  <meta property="og:title" content="Dimver Paul T. Rodulfo — Frontend Developer &amp; UI/UX Designer">
+  <meta property="og:description" content="Web development, UI/UX design, and photo and video editing from Catanduanes, Philippines.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>/* Apply saved theme before paint to avoid a flash */
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar"><i data-lucide="menu"></i></button>
+  <div class="scrim" id="scrim"></div>
+
+  <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+    <a class="brand" href="#home" aria-label="Dimver Rodulfo, home">
+      <span class="logo">DR</span>
+      <strong>Dimver Rodulfo</strong>
+      <small>Developer &amp; Designer</small>
+    </a>
+
+    <nav class="nav" aria-label="Sections">
+      <a href="#home" class="nav-link"><i data-lucide="home"></i>Home</a>
+      <a href="#about" class="nav-link"><i data-lucide="user"></i>About</a>
+      <a href="#services" class="nav-link"><i data-lucide="settings"></i>Services</a>
+      <a href="#skills" class="nav-link"><i data-lucide="code-xml"></i>Skills</a>
+      <a href="#projects" class="nav-link"><i data-lucide="folder"></i>Projects</a>
+    </nav>
+
+    <div class="side-contact">
+      <p class="side-label">Contact</p>
+      <a href="#" data-link="email"><i data-lucide="mail"></i>Email</a>
+      <a href="#" data-link="github" target="_blank" rel="noopener noreferrer"><i data-lucide="github"></i>GitHub</a>
+      <a href="#" data-link="linkedin" target="_blank" rel="noopener noreferrer"><i data-lucide="linkedin"></i>LinkedIn</a>
+    </div>
+
+    <button class="switch" id="themeToggle" type="button" role="switch" aria-checked="false" aria-label="Switch to dark mode">
+      <i data-lucide="sun" class="s-sun"></i><i data-lucide="moon" class="s-moon"></i><span class="knob"></span>
+      <span id="themeLabel" class="sr-only">Dark mode</span>
+    </button>
+  </aside>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="hero-wrap">
+      <div class="hero">
+        <div class="photo-frame">
+          <img src="assets/images/profile.jpg" alt="Portrait of Dimver Paul T. Rodulfo" width="282" height="333" onerror="this.remove()">
+          <span class="photo-fallback" aria-hidden="true">DR</span>
+          <p class="availability"><span class="dot"></span>Open to opportunities</p>
+        </div>
+
+        <div class="hero-main">
+          <span class="badge"><i data-lucide="graduation-cap"></i>BS Computer Science <b>·</b> <strong>3rd Year</strong> <b>·</b> <span>CatSU</span></span>
+          <h1>Dimver Paul T. Rodulfo</h1>
+          <p class="hero-title">Web <strong>Developer</strong> &amp; UI/UX <strong>Designer</strong></p>
+          <p class="lead">I'm a Computer Science student passionate about building modern, user-friendly web experiences. I enjoy turning ideas into clean interfaces and practical digital solutions.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="#projects"><i data-lucide="code-xml"></i>View My Projects</a>
+            <a class="btn btn-outline" href="#" data-link="cv" download><i data-lucide="download"></i>Download CV</a>
+            <a class="btn btn-outline" href="#contact"><i data-lucide="mail"></i>Contact Me</a>
+          </div>
+        </div>
+
+        <ul class="hero-facts" aria-label="Quick facts">
+          <li><i data-lucide="graduation-cap"></i><span><strong>19</strong>Years Old</span></li>
+          <li><i data-lucide="map-pin"></i><span>Catanduanes State University (CatSU)<br>Catanduanes, Philippines</span></li>
+          <li><i data-lucide="laptop"></i><span>Web Development<br>UI/UX Design</span></li>
+          <li><i data-lucide="star"></i><span>Photo &amp; Video Editing</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section reveal">
+      <div class="sec-head">
+        <h2>Featured Projects</h2>
+        <a class="link-arrow" href="#" data-link="github" target="_blank" rel="noopener noreferrer">View All Projects<i data-lucide="arrow-right"></i></a>
+      </div>
+      <div class="project-grid">
+        <article class="project">
+          <div class="thumb thumb-dark"><img src="assets/images/taskflow.png" alt="TaskFlow screenshot" loading="lazy" onerror="this.remove()"><div class="brand-tile"><i data-lucide="check-square"></i><strong>TaskFlow</strong></div></div>
+          <div class="project-body">
+            <h3>TaskFlow</h3>
+            <p>A task and project management system designed to help users organize projects, manage tasks, and collaborate efficiently.</p>
+            <ul class="tags"><li>Laravel</li><li>MySQL</li><li>JavaScript</li></ul>
+            <div class="btn-row"><a class="btn btn-primary btn-sm" href="#" data-link="taskflowDemo" target="_blank" rel="noopener noreferrer">View Project</a><a class="btn btn-outline btn-sm" href="#" data-link="taskflowRepo" target="_blank" rel="noopener noreferrer"><i data-lucide="github"></i>GitHub Repository</a></div>
+          </div>
+        </article>
+        <article class="project">
+          <div class="thumb thumb-blue"><img src="assets/images/boardnear.png" alt="BoardNear screenshot" loading="lazy" onerror="this.remove()"><div class="brand-tile"><i data-lucide="house"></i><strong>BoardNear</strong></div></div>
+          <div class="project-body">
+            <h3>BoardNear</h3>
+            <p>A student boarding house discovery platform designed to help students find suitable accommodation near Catanduanes State University.</p>
+            <ul class="tags"><li>Laravel</li><li>MySQL</li><li>HTML/CSS</li></ul>
+            <div class="btn-row"><a class="btn btn-primary btn-sm" href="#" data-link="boardnearDemo" target="_blank" rel="noopener noreferrer">View Project</a><a class="btn btn-outline btn-sm" href="#" data-link="boardnearRepo" target="_blank" rel="noopener noreferrer"><i data-lucide="github"></i>GitHub Repository</a></div>
+          </div>
+        </article>
+        <article class="project">
+          <div class="thumb thumb-dark"><img src="assets/images/medtrack.png" alt="MedTrack screenshot" loading="lazy" onerror="this.remove()"><div class="brand-tile"><i data-lucide="heart-pulse"></i><strong>MedTrack</strong></div></div>
+          <div class="project-body">
+            <h3>MedTrack</h3>
+            <p>A medicine reminder and tracking system that helps users organize their medications and receive scheduled reminders.</p>
+            <ul class="tags"><li>Laravel</li><li>Blade</li><li>JavaScript</li></ul>
+            <div class="btn-row"><a class="btn btn-primary btn-sm" href="#" data-link="medtrackDemo" target="_blank" rel="noopener noreferrer">View Project</a><a class="btn btn-outline btn-sm" href="#" data-link="medtrackRepo" target="_blank" rel="noopener noreferrer"><i data-lucide="github"></i>GitHub Repository</a></div>
+          </div>
+        </article>
+      </div>
+      <p class="note" id="linkNote" hidden>Some links are not set up yet. Add them in <code>script.js</code> under <code>CONFIG</code>.</p>
+    </section>
+
+    <!-- SKILLS + ABOUT -->
+    <div class="duo">
+      <section id="skills" class="section reveal">
+        <div class="sec-head"><h2>My Skills</h2></div>
+        <h3 class="sub">Programming and Development</h3>
+        <ul class="skill-grid">
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/html5/html5-original.svg" alt="" width="22" height="22" loading="lazy">HTML5</li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/css3/css3-original.svg" alt="" width="22" height="22" loading="lazy">CSS3</li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/javascript/javascript-original.svg" alt="" width="22" height="22" loading="lazy">JavaScript</li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/c/c-original.svg" alt="" width="22" height="22" loading="lazy">C Programming</li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/python/python-original.svg" alt="" width="22" height="22" loading="lazy">Python</li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/laravel/laravel-original.svg" alt="" width="22" height="22" loading="lazy">Laravel</li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mysql/mysql-original.svg" alt="" width="22" height="22" loading="lazy">MySQL</li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/php/php-original.svg" alt="" width="22" height="22" loading="lazy">PHP</li>
+        </ul>
+        <h3 class="sub">Creative Skills</h3>
+        <ul class="skill-grid">
+          <li><i data-lucide="image"></i>Photo Editing</li>
+          <li><i data-lucide="clapperboard"></i>Video Editing</li>
+          <li><i data-lucide="palette"></i>UI/UX Design</li>
+        </ul>
+      </section>
+
+      <section id="about" class="section reveal about">
+        <div class="sec-head"><h2>About Me</h2></div>
+        <div class="about-text">
+          <p>I'm Dimver Paul T. Rodulfo, a 3rd-year BS Computer Science student at Catanduanes State University. I'm interested in frontend development and UI/UX design, with a creative background in photo and video editing.</p>
+          <p>I'm continuously learning new technologies and improving my skills by building projects that solve practical problems.</p>
+        </div>
+        <dl class="about-facts">
+          <div><dt>Education</dt><dd>BS Computer Science, CatSU</dd></div>
+          <div><dt>Technical interests</dt><dd>Web developer, UI/UX design</dd></div>
+          <div><dt>Personal development</dt><dd>Learning by building practical projects</dd></div>
+          <div><dt>Career goals</dt><dd>Grow as a frontend developer and UI/UX designer</dd></div>
+        </dl>
+        <div class="stats" aria-label="Statistics">
+          <div><strong>03</strong><span>Featured Projects</span></div>
+          <div><strong>06+</strong><span>Technologies</span></div>
+          <div><strong>02</strong><span>Creative Skills</span></div>
+          <div><strong>100%</strong><span>Passion to Learn</span></div>
+        </div>
+        <span class="deco" aria-hidden="true"></span>
+      </section>
+    </div>
+
+    <!-- SERVICES -->
+    <section id="services" class="section reveal">
+      <div class="sec-head"><h2>Services</h2></div>
+      <div class="grid-3">
+        <article class="card"><i data-lucide="code-xml"></i><h3>Web Development</h3>
+          <ul class="check"><li>Responsive website development</li><li>Frontend implementation</li><li>Clean and maintainable code</li></ul></article>
+        <article class="card"><i data-lucide="pen-tool"></i><h3>UI/UX Design</h3>
+          <ul class="check"><li>User interface design</li><li>Website layout planning</li><li>User experience improvement</li></ul></article>
+        <article class="card"><i data-lucide="film"></i><h3>Photo &amp; Video Editing</h3>
+          <ul class="check"><li>Photo enhancement</li><li>Video editing</li><li>Visual content creation</li></ul></article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section reveal">
+      <div class="sec-head"><h2>Contact</h2></div>
+      <div class="contact-grid">
+        <div>
+          <p class="lead">Have a project or an opportunity in mind? Send a message and I'll get back to you.</p>
+          <ul class="contact-list">
+            <li><i data-lucide="mail"></i><a href="#" data-link="email" data-text="email">Email</a></li>
+            <li><i data-lucide="github"></i><a href="#" data-link="github" target="_blank" rel="noopener noreferrer">GitHub profile</a></li>
+            <li><i data-lucide="linkedin"></i><a href="#" data-link="linkedin" target="_blank" rel="noopener noreferrer">LinkedIn profile</a></li>
+          </ul>
+          <a class="btn btn-primary" href="#" data-link="email"><i data-lucide="mail"></i>Contact Me</a>
+        </div>
+        <form class="card form" id="contactForm" novalidate>
+          <label>Full Name<input type="text" name="name" autocomplete="name" required></label>
+          <label>Email Address<input type="email" name="email" autocomplete="email" required></label>
+          <label>Subject<input type="text" name="subject" required></label>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand-row" href="#home"><span class="logo sm">DR</span><span><strong>Dimver Rodulfo</strong><small>Building clean, practical web experiences.</small></span></a>
+    <div class="social">
+      <a href="#" data-link="github" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i data-lucide="github"></i></a>
+      <a href="#" data-link="linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+      <a href="#" data-link="email" aria-label="Email"><i data-lucide="mail"></i></a>
+    </div>
+    <p>© <span id="year"></span> Dimver Paul T. Rodulfo. All rights reserved.</p>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top"><i data-lucide="arrow-up"></i></button>
+
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
